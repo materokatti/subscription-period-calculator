@@ -6,13 +6,19 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "ts-node src/test.ts"
   },
-  "keywords": ["subscription", "period", "calculator"],
+  "keywords": [
+    "subscription",
+    "period",
+    "calculator"
+  ],
   "author": "DevStory",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.31",
+    "ts-node": "^10.9.2",
     "typescript": "^4.2.2"
   }
 }
