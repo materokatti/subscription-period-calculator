@@ -34,8 +34,6 @@ export function calculateSubscriptionPeriod(
       }
     } else {
       startDate.setMonth(startDate.getMonth() - 1);
-      console.log('startDate.getDate', startDate.getDate());
-      console.log('date.getDate', date.getDate());
       if (startDate.getDate() !== date.getDate() && startDate.getDate() < date.getDate()) {
         startDate.setDate(startDate.getDate() - 1);
       }
